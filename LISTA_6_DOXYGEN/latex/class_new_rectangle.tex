@@ -1,0 +1,123 @@
+\hypertarget{class_new_rectangle}{}\doxysection{New\+Rectangle Class Reference}
+\label{class_new_rectangle}\index{NewRectangle@{NewRectangle}}
+Inheritance diagram for New\+Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_new_rectangle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_new_rectangle_a68e102124309f7924bbd10e99c3ef451}{New\+Rectangle}} (int down, int across, int thempo, double probability, double screen\+Width, double screen\+Height, Random random, int i, int j, Grid\+Pane grid\+Pane)
+\item 
+void \mbox{\hyperlink{class_new_rectangle_aa6c2f52209da33808981250ce51b41c1}{set\+Neighbours}} (\mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}} upper\+Neighbour, \mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}} lower\+Neighbour, \mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}} right\+Neighbour, \mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}} left\+Neighbour)
+\item 
+void \mbox{\hyperlink{class_new_rectangle_a4e4e390f76a18022402fc54a17e89368}{change\+Color}} (double chance)
+\item 
+void \mbox{\hyperlink{class_new_rectangle_a5ef799ecee963228dc313ef692656b7e}{run}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+KLASA NEWTHREAD -\/ ROZSZERZA RECTANGLE I IMPLEMENTUJE RUNNABLE 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_new_rectangle_a68e102124309f7924bbd10e99c3ef451}\label{class_new_rectangle_a68e102124309f7924bbd10e99c3ef451}} 
+\index{NewRectangle@{NewRectangle}!NewRectangle@{NewRectangle}}
+\index{NewRectangle@{NewRectangle}!NewRectangle@{NewRectangle}}
+\doxysubsubsection{\texorpdfstring{NewRectangle()}{NewRectangle()}}
+{\footnotesize\ttfamily New\+Rectangle.\+New\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{down,  }\item[{int}]{across,  }\item[{int}]{thempo,  }\item[{double}]{probability,  }\item[{double}]{screen\+Width,  }\item[{double}]{screen\+Height,  }\item[{Random}]{random,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{Grid\+Pane}]{grid\+Pane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+KONSTRUKTOR KLASY NEWRECTANGLE -\/ USTAWIA POCZATKOWY KOLOR RECTANGLE 
+\begin{DoxyParams}{Parameters}
+{\em down} & \\
+\hline
+{\em across} & \\
+\hline
+{\em screen\+Width} & \\
+\hline
+{\em screen\+Height} & \\
+\hline
+{\em probability} & \\
+\hline
+{\em thempo} & \\
+\hline
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+USTAWIENIE POCZATKOWEGO KOLORU
+
+USTAWIENIE POCZATKOWEGO STANU AKTYWNOSCI
+
+REAKCJA NA NACISNIECIE MYSZKA NA OBIEKT
+
+WATEK ZOSTAJE PRZEBUDZONY
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_new_rectangle_a4e4e390f76a18022402fc54a17e89368}\label{class_new_rectangle_a4e4e390f76a18022402fc54a17e89368}} 
+\index{NewRectangle@{NewRectangle}!changeColor@{changeColor}}
+\index{changeColor@{changeColor}!NewRectangle@{NewRectangle}}
+\doxysubsubsection{\texorpdfstring{changeColor()}{changeColor()}}
+{\footnotesize\ttfamily void New\+Rectangle.\+change\+Color (\begin{DoxyParamCaption}\item[{double}]{chance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+FUNKCJA COLORCHANGE -\/ ZMIENIA KOLOR RECTANGLE W ZALEZNOSCI OD PROBABILITY START POJEDYNCZEJ ZMIANY WATKU
+
+BLOK IF LOSUJE RANDOMOWY KOLOR DLA RECTANGLE I USTAWIA GO
+
+WYKONANIE POJEDYNCZEJ RANDOMOWEJ ZMIANY
+
+BLOK ELSE USREDNIA KOLOR SASIADOW DLA RECTANGLE I USTAWIA GO
+
+POCZATKOWE WARTOSCI
+
+USTALANIE RGB
+
+BLOK IF WYKONA SIE JESLI DANY SASIAD NIE JEST ZAWIESZONY
+
+BLOK IF ZABEZPIECZA PRZED DZIELENIEM PRZEZ 0
+
+WYKONANIE POJEDYNCZEJ SREDNIEJ ZMIANY
+
+BLOK ELSE WYKONA SIE GDY WSZYSCY SASIEDZI SA ZAWIESZENI
+
+KONIEC POJEDYNCZEJ ZMIANY WATKU\mbox{\Hypertarget{class_new_rectangle_a5ef799ecee963228dc313ef692656b7e}\label{class_new_rectangle_a5ef799ecee963228dc313ef692656b7e}} 
+\index{NewRectangle@{NewRectangle}!run@{run}}
+\index{run@{run}!NewRectangle@{NewRectangle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void New\+Rectangle.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+FUNKCJA RUN -\/ STARTUJE DZIALANIE WATKU START PRACY DANEGO WATKU
+
+NIESKONCZONA PRACA WATKU
+
+PAUZA DLA DANEGO WATKU
+
+ZSYNCHRONIZOWANE ZAWIESZENIE WATKU
+
+ZSYNCHRONIZOWANE KOLOROWANIE RECTANGLE
+
+LAPANIE WYJATKOW\mbox{\Hypertarget{class_new_rectangle_aa6c2f52209da33808981250ce51b41c1}\label{class_new_rectangle_aa6c2f52209da33808981250ce51b41c1}} 
+\index{NewRectangle@{NewRectangle}!setNeighbours@{setNeighbours}}
+\index{setNeighbours@{setNeighbours}!NewRectangle@{NewRectangle}}
+\doxysubsubsection{\texorpdfstring{setNeighbours()}{setNeighbours()}}
+{\footnotesize\ttfamily void New\+Rectangle.\+set\+Neighbours (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}}}]{upper\+Neighbour,  }\item[{\mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}}}]{lower\+Neighbour,  }\item[{\mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}}}]{right\+Neighbour,  }\item[{\mbox{\hyperlink{class_new_rectangle}{New\+Rectangle}}}]{left\+Neighbour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+FUNKCJA SETNEIGHBOURS -\/ OTRZYMUJE 4 SASIADOW TEGO OBIEKTU I ZAPISUJE ICH W TABLICY 
+\begin{DoxyParams}{Parameters}
+{\em upper\+Neighbour} & \\
+\hline
+{\em lower\+Neighbour} & \\
+\hline
+{\em right\+Neighbour} & \\
+\hline
+{\em left\+Neighbour} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+New\+Rectangle.\+java\end{DoxyCompactItemize}
